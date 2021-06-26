@@ -1,10 +1,29 @@
-import React from 'react'
+import React from 'react';
+import styled from 'styled-components';
+import { Link } from 'react-router-dom';
+
+const Nav = styled.nav`
+    height: 60px;
+    background: red;
+`
+
+const Logo = styled(Link)`
+    color: white;
+`
+
+const MenuBars = styled.i``
+
+const NavMenu = styled.div``
 
 function Navbar() {
     return (
-        <div>
-            <h1>Nav</h1>
-        </div>
+        <Nav>
+            <Logo>ELIXR</Logo>
+            <MenuBars />
+            <NavMenu>
+
+            </NavMenu>
+        </Nav>
     )
 }
 
